@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 elemek</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML5 elemek</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="table.html">Táblázat</a></li>
+            <li><a href="html5.html" class="active">HTML5</a></li>
+            <li><a href="form.html">Űrlap</a></li>
+            <li><a href="about.html">Rólunk</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <h3>HTML5 újdonságok</h3>
+            <p>Ez az oldal különféle HTML5 elemeket mutat be, mint például a video, audio, canvas és egyebek.</p>
+        </aside>
+        <main id="content">
+            <h2>HTML5 újdonságok bemutatása</h2>
+            
+            <img src="https://via.placeholder.com/400x200" alt="HTML5 kép 1">
+            <p>HTML5 sok új elemet és API-t hozott a webfejlesztők számára. Az alábbiakban bemutatunk néhányat ezek közül.</p>
+            
+            <section>
+                <h3>Video elem</h3>
+                <video width="400" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    A böngésződ nem támogatja a video elemet.
+                </video>
+            </section>
+            
+            <img src="https://via.placeholder.com/400x200" alt="HTML5 kép 2">
+            <section>
+                <h3>Audio elem</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    A böngésződ nem támogatja az audio elemet.
+                </audio>
+            </section>
+            
+            <section>
+                <h3>Canvas rajzolás</h3>
+                <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+            </section>
+            
+            <img src="https://via.placeholder.com/400x200" alt="HTML5 kép 3">
+            <section>
+                <h3>Progress elem</h3>
+                <progress value="75" max="100"></progress>
+            </section>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+        </main>
+    </div>
+    <footer>
+        <p>Sik Dominik – Q60PVQ</p>
+    </footer>
+    <script src="/src/js/canvas.js"></script>
+</body>
+</html>

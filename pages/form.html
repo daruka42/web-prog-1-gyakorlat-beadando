@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap oldal</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Űrlap oldal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőlap</a></li>
+            <li><a href="table.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5</a></li>
+            <li><a href="form.html" class="active">Űrlap</a></li>
+            <li><a href="about.html">Rólunk</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <h3>Űrlap információk</h3>
+            <p>Ez az oldal egy űrlapot tartalmaz, amelyet JavaScript segítségével validálunk.</p>
+            <p>Minden mező kötelező, és a szöveges mezők legalább 10 karaktert igényelnek.</p>
+        </aside>
+        <main id="content">
+            <h2>Kapcsolatfelvétel</h2>
+            
+            <img src="https://via.placeholder.com/400x200" alt="Űrlap kép 1">
+            <p>Kérjük, töltse ki az alábbi űrlapot, hogy fel tudjuk venni Önnel a kapcsolatot. Minden mező kitöltése kötelező.</p>
+            
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Teljes név:</label>
+                    <input type="text" id="name" name="name" required minlength="10">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email cím:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Üzenet (minimum 10 karakter):</label>
+                    <textarea id="message" name="message" required minlength="10"></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender">Nem:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">-- Kérjük válasszon --</option>
+                        <option value="male">Férfi</option>
+                        <option value="female">Nő</option>
+                        <option value="other">Egyéb</option>
+                    </select>
+                    <span class="error-message" id="genderError"></span>
+                </div>
+                
+                <img src="https://via.placeholder.com/400x200" alt="Űrlap kép 2">
+                
+                <div class="form-group">
+                    <input type="submit" value="Küldés">
+                </div>
+            </form>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>Köszönjük az üzenetet! Hamarosan felvesszük Önnel a kapcsolatot.</p>
+            </div>
+            
+            <img src="https://via.placeholder.com/400x200" alt="Űrlap kép 3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, eget ultricies nisl nisl eget nisl.</p>
+        </main>
+    </div>
+    <footer>
+        <p>Sik Dominik – Q60PVQ</p>
+    </footer>
+    <script src="/src/js/form-validation.js"></script>
+</body>
+</html>
